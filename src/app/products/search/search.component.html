@@ -1,0 +1,30 @@
+
+<input  type="text"
+[(ngModel)]="chaine"
+class="form-control"
+(keyup)="search(searchResult)" 
+> 
+
+<ol>
+  <li
+
+         *ngFor="let product of searchResult"
+        class="list-group-item"
+         (click)="selectProduct(product)" 
+  > 
+<div>    
+      <h3 class="card-title">{{ product.productName }}</h3>
+     
+      <h4>${{ product.price }}</h4>
+      <p class="card-text">{{ product.description }}</p>
+       
+       
+  
+      <span class="text-warning">{{ product.rating }}</span>
+     
+  </div> 
+  </li>
+  </ol>
+  
+  
+  

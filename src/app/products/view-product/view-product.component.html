@@ -1,0 +1,25 @@
+<div class="card mt-4 mb-4">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  
+  <div class="card-body" id ="table">
+    <h3 class="card-title">{{ productDetails.productName }}</h3>
+    <a href="products/delete-product/{{productDetails.id}}">Delete Product</a>
+    <a href="products/update-product/{{productDetails.id}}">Update Product</a> | 
+   
+    
+    <h4>${{ productDetails.price }}</h4>
+    <p class="card-text">{{ productDetails.description }}</p>
+     
+     
+
+    <span class="text-warning">{{ productDetails.rating }}</span>
+   
+
+
+
+    <button (click)="download()">pdf</button>
+  </div>
+</div>
+<!-- /.card -->
+
+<div ngClass="c2">this is c1</div>
