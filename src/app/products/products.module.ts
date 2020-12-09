@@ -18,6 +18,8 @@ import { ChartsModule } from 'ng2-charts';
 import { SearchComponent } from './search/search.component';
 import { PiechartComponent } from './piechart/piechart.component';
 //import { SeachComponent } from './seach/seach.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -34,14 +36,16 @@ import { PiechartComponent } from './piechart/piechart.component';
     DeleteProductComponent,
     UpdateProductComponent,
     SearchComponent,
-    PiechartComponent
+    PiechartComponent,
+    ProductComponent
     
   ],
   imports: [
     CommonModule,
     FormsModule,
     ProductsRoutingModule,
-    ChartsModule
+    ChartsModule,
+    NgbModule
   ]
 })
 export class ProductsModule { }

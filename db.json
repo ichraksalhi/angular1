@@ -1,152 +1,52 @@
 {
   "products": [
     {
-      "id": 5,
-      "categoryId": 1,
-      "productName": "Polo Tshirts",
-      "description": "Product description goes here",
-      "rating": 2,
-      "price": 2330,
-      "productImg": "http://localhost:4200/assets/5.jpg",
-      "isAvailable": true,
-      "color": "red",
-      "reviews": 10
-    },
-    {
-      "id": 98,
-      "categoryId": "4",
-      "productName": "kk",
-      "description": "l",
-      "rating": "1",
-      "price": "^m",
-      "productImg": "http://localhost:4200/assets/2.jpg",
-      "isAvailable": 1,
-      "color": "ll",
-      "reviews": "4"
-    },
-    {
-      "id": 14,
-      "categoryId": "4",
-      "description": "f",
-      "rating": "4",
-      "price": "1",
-      "productImg": "http://localhost:4200/assets/2.jpg",
-      "isAvailable": 1,
-      "color": "aaa",
-      "reviews": "4"
-    },
-    {
-      "id": 108,
-      "isAvailable": 1
-    },
-    {
-      "id": 109,
-      "isAvailable": 1
-    },
-    {
-      "id": 110,
-      "isAvailable": 1
-    },
-    {
-      "id": 111,
-      "isAvailable": 1
-    },
-    {
-      "id": 112,
-      "productName": "",
-      "description": "",
+      "productName": "cofee",
+      "description": " \nArabica\n \n\nCafé le plus apprécié et réputé pour sa douceur et sa profondeur, ce dernier est le plus vendu et le plus produit au monde. On le surnomme souvent, le champagne du café",
       "rating": "",
-      "price": "",
-      "productImg": "",
-      "isAvailable": 1,
-      "color": ""
-    },
-    {
-      "id": 113,
-      "productName": "",
-      "description": "",
-      "rating": "",
-      "price": "",
-      "productImg": "",
-      "isAvailable": 1,
-      "color": ""
-    },
-    {
-      "id": 114,
-      "productName": "",
-      "description": "",
-      "rating": "",
-      "price": "",
-      "productImg": "",
-      "isAvailable": 1,
-      "color": ""
-    },
-    {
-      "id": 115,
-      "productName": "charchou9a",
-      "description": "sss",
-      "rating": "4",
       "price": "5",
-      "productImg": "http://localhost:4200/assets/2.jpg",
+      "productImg": "http://localhost:4200/assets/cap1.PNG",
       "isAvailable": 1,
-      "color": "sssss"
+      "color": "5",
+      "reviews": "2",
+      "id": 21
     },
     {
-      "id": 116,
-      "productName": "charchou9a",
-      "description": "sss",
-      "rating": "4",
-      "price": "5",
-      "productImg": "http://localhost:4200/assets/2.jpg",
+      "productName": "  Robusta",
+      "description": "Très riche en caféine, celui-ci présente un goût très intense, mais légèrement amer. Très peu consommé pur, il est le plus souvent mélangé à l’Arabica pour lui apporter un peu de douceur et de saveur gustative.",
+      "rating": 3,
+      "price": "16",
+      "productImg": "http://localhost:4200/assets/cap2.PNG",
       "isAvailable": 1,
-      "color": "sssss"
+      "color": "marro,",
+      "reviews": "",
+      "id": 22
     },
     {
-      "id": 117,
-      "productName": "sssssss",
-      "description": "ssssssssss",
-      "rating": "1",
-      "price": "s",
-      "productImg": "http://localhost:4200/assets/2.jpg",
-      "isAvailable": 1,
-      "color": "ssssss"
-    },
-    {
-      "productName": "taz",
-      "description": "ssssssssss",
+      "id": 23,
+      "categoryId": "3",
+      "productName": "  Kopi Luwak",
+      "description": "Pour les amateurs de café qui cherchent à s’essayer à de nouvelles saveurs, ce type de café pourrait bien les surprendre. Très rare et prisé, il n’est pas récolté à la main comme l’Arabica et le Robusta, mais provient des suites de la digestion de la civette indonésienne. Récoltés dans les excréments de ce petit animal, ces grains de café se différencient par leur goût unique.",
       "rating": "",
-      "price": "s",
-      "productImg": "",
+      "price": "5",
+      "productImg": "http://localhost:4200/assets/cap3.PNG",
       "isAvailable": 1,
-      "color": "ssssss",
-      "id": 118
-    },
-    {
-      "id": 119,
-      "productName": "khawla",
-      "isAvailable": 1
+      "color": "blanc",
+      "reviews": "3"
     }
   ],
   "categories": [
     {
       "id": 1,
-      "categoryName": "ichraaaaaaaaak"
+      "categoryName": "high"
     },
     {
       "id": 2,
-      "categoryName": "Casual TShirts"
+      "categoryName": " midium"
     },
     {
       "id": 3,
-      "categoryName": "Soccer Tshirts"
-    },
-    {
-      "id": 4,
-      "categoryName": "Shirts"
-    },
-    {
-      "id": 5,
-      "categoryName": "Shoes"
+      "categoryName": " low"
     }
   ],
   "comments": [

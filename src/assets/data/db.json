@@ -64,24 +64,17 @@
   "categories": [
     {
       "id": 1,
-      "categoryName": "ichraaaaaaaaak"
+      "categoryName": "high"
     },
     {
       "id": 2,
-      "categoryName": "Casual TShirts"
+      "categoryName": " medium"
     },
     {
       "id": 3,
-      "categoryName": "Soccer Tshirts"
-    },
-    {
-      "id": 4,
-      "categoryName": "Shirts"
-    },
-    {
-      "id": 5,
-      "categoryName": "Shoes"
+      "categoryName": " low "
     }
+    
   ],
   "comments": [
     {

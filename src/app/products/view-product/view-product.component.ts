@@ -15,8 +15,10 @@ import { image } from 'html2canvas/dist/types/css/types/image';
 })
 export class ViewProductComponent implements OnInit {
 
-  productId = 0;
+  productId = 0;  
   productDetails: Product;
+
+   currentRate = 0;
   
   //currentRate : number = 3;
   constructor(

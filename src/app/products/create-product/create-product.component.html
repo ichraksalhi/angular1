@@ -1,69 +1,57 @@
 <h2 class="bg-light mb-2">Add New Product</h2>
-
 <form (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm" >
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label for="validationServer01">Product Name</label>
         <input type="text" class="form-control" value="Enter Product Name" required name="product_name" ngModel>
       </div>
-
-
-      <div class="col-md-6 mb-3">
-        <label for="validationServer02">Category Id</label>
-        <input type="number" class="form-control"
-          
-         [(ngModel)]="product.categoryId" #i="ngModel"  required >
-      </div>
-
-      <div class="alert alert-danger" *ngIf="i.invalid"> not required </div>  
-
-
+    
 
       <div class="col-md-6 mb-3">
-        <label for="validationServer02">Category Img</label>
-        <input type="text" class="form-control" required name="product_img" ngModel>
+        <label for="validationServer02">choose Category</label>
+        <select class="custom-select" required name="product_category" ngModel>
+          <option selected value="">Choose...</option>
+          <option value="1">high</option>
+          <option value="2">medium</option>
+          <option value="3">low<option>
+      
+        </select>
       </div>
-    </div>  
 
+
+
+
+
+      
+    <div class="col-md-6 mb-3">
+      <label for="validationServer02">Category Img</label>
+      <input type="text" class="form-control" required name="product_img" ngModel>
+    </div>
+  </div>  
+
+
+    
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label for="validationServer03">Description</label>
-        <textarea type="text" class="form-control" placeholder="Enter Product Description" 
-        required name="description" 
-        [(ngModel)]="product.description" #t="ngModel" required minlength="3" >
+        <textarea type="text" class="form-control" placeholder="Enter Product Description" required name="product_description" ngModel >
         </textarea>
-     
-      <div class="alert alert-danger"  *ngIf="t.invalid" >  
-   min 3 
       </div>
+      <h1 class="text-primary">
+        <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false" 
+        required name="product_rating" ngModel ></ngb-rating>
+      </h1>
+      
     </div>
 
+   
 
-      <div class="col-md-6 mb-3">
-        <label>Rating</label>
-        <select class="custom-select" required name="product_rating" ngModel>
-          <option selected value="">Choose...</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-      </div>
-    </div> 
 
     <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="validationServer01">Product Color</label>
-          <input type="text" class="form-control" value="Enter Product Name" 
-          required name="color" ngModel  
-          [(ngModel)]="product.color" #e="ngModel"  required minlength ="3">   
- 
-        <div class="alert alert-danger"  *ngIf="e.invalid" >  
-          min 3 
+          <input type="text" class="form-control" value="Enter Product Name" required name="product_color" ngModel>
         </div>
-      </div> 
- 
         <div class="col-md-6 mb-3">
           <label for="validationServer02">Is Avaiable</label>
           <select class="custom-select" required name="product_available" ngModel>
@@ -73,25 +61,21 @@
           </select>
         </div>
       </div>
-
-
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="validationServer01">Product Price</label>
           <input type="text" class="form-control" value="Enter Product Name" required name="product_price" ngModel>
         </div>
-
         <div class="col-md-6 mb-3">
           <label for="validationServer02">Reviews</label>
           <select class="custom-select" required name="product_reviews" ngModel>
             <option selected value="">Choose...</option>
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">2</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="3">3</option>
+            
           </select>
         </div>
-      </div>  
-    <button class="btn btn-primary" type="submit" [disabled]="addProductForm.invalid" >Submit form</button>
+      </div>
+    <button class="btn btn-primary" type="submit" >Submit form</button>
   </form>

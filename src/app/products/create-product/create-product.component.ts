@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product';
 import { ProductsService } from '../../shared/products.service';
+import { ProductsComponent } from '../products.component';
+import Swal from 'sweetalert2';
 
 
 
@@ -11,7 +13,8 @@ import { ProductsService } from '../../shared/products.service';
 })
 export class CreateProductComponent implements OnInit {
 
-  product: Product;
+  currentRate = 0;
+  
 
   constructor(private productsService: ProductsService) { }
 
@@ -39,6 +42,23 @@ export class CreateProductComponent implements OnInit {
 
     this.productsService.createProduct(newProduct).subscribe(data => {
       console.log(data);
+      Swal.fire({
+        title: 'Are you sure to add this product?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, add it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'added!',
+            'Your file has been added.',
+            'success'
+          )
+        }
+      })
     });
 
   }

@@ -12,6 +12,7 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ChartsModule } from 'ng2-charts';
+
 //import { ModelModule } from './model/model.module';
 
 
@@ -19,6 +20,7 @@ import { ChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent
+ 
   ],
   imports: [ 
     AppRoutingModule,

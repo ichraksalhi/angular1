@@ -3,7 +3,8 @@
   
   <div class="card-body" id ="table">
     <h3 class="card-title">{{ productDetails.productName }}</h3>
-    <a href="products/delete-product/{{productDetails.id}}">Delete Product</a>
+  
+    |  <a href="products/delete-product/{{productDetails.id}}">Delete Product</a> |  
     <a href="products/update-product/{{productDetails.id}}">Update Product</a> | 
    
     
@@ -14,11 +15,14 @@
 
     <span class="text-warning">{{ productDetails.rating }}</span>
    
+    <h1 class="text-primary">
+      <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+    </h1>
+    <p>Rate: {{currentRate}}</p>
 
-
-
-    <button (click)="download()">pdf</button>
+   
   </div>
+  <button class="btn btn-dark" (click)="download()">pdf</button>
 </div>
 <!-- /.card -->
 

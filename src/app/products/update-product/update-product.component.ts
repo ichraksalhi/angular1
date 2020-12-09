@@ -12,6 +12,8 @@ export class UpdateProductComponent implements OnInit {
 
   productId = 0;
 
+  currentRate = 0;
+  
   productDetails: Product;
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -41,7 +43,7 @@ export class UpdateProductComponent implements OnInit {
       description: form.value.description,
       rating: form.value.product_rating,
       price: form.value.product_price,
-      productImg: '',
+      productImg: form.value.product_img,
       isAvailable: 1,
       color: form.value.product_color,
       reviews: form.value.product_category,
