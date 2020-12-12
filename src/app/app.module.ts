@@ -1,17 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 
-import { OrdersModule } from './orders/orders.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SiteFrameworkModule } from './site-framework/site-framework.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {OrdersModule} from './orders/orders.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {SiteFrameworkModule} from './site-framework/site-framework.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
-import { ChartsModule } from 'ng2-charts';
+import {ChartsModule} from 'ng2-charts';
 
 //import { ModelModule } from './model/model.module';
 
@@ -19,15 +19,15 @@ import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
-    AppComponent 
- 
+    AppComponent
+
   ],
-  imports: [ 
+  imports: [
     AppRoutingModule,
-    HttpClientModule, 
+    HttpClientModule,
     OrdersModule,
     SiteFrameworkModule,
-    FormsModule, 
+    FormsModule,
     BrowserModule,
     NgbModule,
     ChartsModule,
