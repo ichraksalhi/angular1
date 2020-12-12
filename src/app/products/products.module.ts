@@ -31,7 +31,7 @@ import { ProductComponent } from './product/product.component';
     ViewAllProductsComponent,
     //UpdateProductComponent,
     DeleteProductComponent,
-    ViewAllProductsByDateComponent,
+    ViewAllProductsByDateComponent,  
     ViewAllProductsByCategoryComponent,
     DeleteProductComponent,
     UpdateProductComponent,
@@ -45,7 +45,8 @@ import { ProductComponent } from './product/product.component';
     FormsModule,
     ProductsRoutingModule,
     ChartsModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ]
 })
 export class ProductsModule { }

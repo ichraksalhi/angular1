@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../shared/products.service';
 import { Product } from '../../model/product';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+
 
 @Component({
   selector: 'app-update-product',
@@ -9,6 +11,8 @@ import { Product } from '../../model/product';
   styleUrls: ['./update-product.component.css']
 })
 export class UpdateProductComponent implements OnInit {
+
+  registerForm: FormGroup;
 
   productId = 0;
 
@@ -21,6 +25,15 @@ export class UpdateProductComponent implements OnInit {
       ) { }
 
   ngOnInit(): void {
+
+    this.registerForm = new FormGroup({
+      productName: new FormControl('', [Validators.required, Validators.minLength(3)]) 
+      })
+    
+
+
+
+
     this.activatedRoute.params.subscribe(data => {
       this.productId = data.id;
 

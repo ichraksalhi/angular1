@@ -1,0 +1,17 @@
+<div class="card h-100">
+  <a href="#"><img alt="" class="card-img-top" src="{{product.productImg}}"></a>
+  <div class="card-body">
+    <h4 class="card-title">
+      <a routerLink="product/{{product.id}}">{{ product.productName }}</a>
+
+
+    </h4>
+    <h5>${{ product.price }}</h5>
+    <a routerLink="product/{{product.id}}">${{ product.price }}</a>
+    <p class="card-text">{{ product.description}}</p>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">{{ product.rating}} Stars</small>
+
+  </div>
+</div>

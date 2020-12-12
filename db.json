@@ -33,6 +33,104 @@
       "isAvailable": 1,
       "color": "blanc",
       "reviews": "3"
+    },
+    {
+      "id": 24,
+      "categoryId": "2",
+      "productName": "ichrak",
+      "description": "aaaaaaaaaaa",
+      "rating": 3,
+      "price": "12",
+      "productImg": "http://localhost:4200/assets/cap1.PNG",
+      "isAvailable": 1,
+      "color": "vert",
+      "reviews": "2"
+    },
+    {
+      "productName": "waaaw",
+      "isAvailable": 1,
+      "id": 28
+    },
+    {
+      "id": 30,
+      "categoryId": "2",
+      "description": "sssss",
+      "rating": 3,
+      "price": "q",
+      "productImg": "http://localhost:4200/assets/cap2.PNG",
+      "isAvailable": 1,
+      "color": "d",
+      "reviews": "2"
+    },
+    {
+      "id": 31,
+      "categoryId": "3",
+      "productName": "ssss",
+      "description": "sss",
+      "rating": 4,
+      "price": "s",
+      "productImg": "http://localhost:4200/assets/cap2.PNG",
+      "isAvailable": 1,
+      "color": "ss",
+      "reviews": "3"
+    },
+    {
+      "id": 32,
+      "description": "llllllllll",
+      "rating": 5,
+      "price": "12",
+      "productImg": "http://localhost:4200/assets/cap2.PNG",
+      "isAvailable": 1,
+      "color": "d",
+      "reviews": "2"
+    },
+    {
+      "id": 33,
+      "description": "",
+      "rating": "",
+      "price": "",
+      "productImg": "",
+      "isAvailable": 1
+    },
+    {
+      "id": 34,
+      "description": "ll",
+      "rating": 5,
+      "price": "54",
+      "productImg": "http://localhost:4200/assets/cap2.PNG",
+      "isAvailable": 1,
+      "color": "aaa",
+      "reviews": "1"
+    },
+    {
+      "id": 35,
+      "description": "mmmmmmm",
+      "rating": 4,
+      "price": "14",
+      "productImg": "http://localhost:4200/assets/cap3.PNG",
+      "isAvailable": 1,
+      "color": "aaa",
+      "reviews": "3"
+    },
+    {
+      "id": 36,
+      "description": "pppppppppppppppppppppp",
+      "rating": 5,
+      "price": "100",
+      "productImg": "http://localhost:4200/assets/cap1.jpg",
+      "isAvailable": 1,
+      "color": "aaa",
+      "reviews": "3"
+    },
+    {
+      "id": 37,
+      "description": "dd",
+      "rating": 5,
+      "price": "50",
+      "productImg": "http://localhost:4200/assets/cap3.PNG",
+      "isAvailable": 1,
+      "color": "ddd",
+      "reviews": "3"
     }
   ],
   "categories": [

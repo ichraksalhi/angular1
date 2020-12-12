@@ -3,13 +3,24 @@
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label for="validationServer01">Product Name</label>
-        <input type="text" class="form-control" value="Enter Product Name" required name="product_name" ngModel>
+        <input type="text" class="form-control" value="Enter Product Name"
+         required name="product_name" ngModel  minlength="3" #i="ngModel" [(ngModel)]="product_name"   >
+
+         
+         <div class="alert alert-danger" *ngIf="i.invalid">   
+          le nom doit etre sup a 3 lettres
+           </div>
+
       </div>
     
 
       <div class="col-md-6 mb-3">
         <label for="validationServer02">choose Category</label>
-        <select class="custom-select" required name="product_category" ngModel>
+        <select class="custom-select"  name="product_category" ngModel  [(ngModel)]="product_category" 
+         #k="ngModel"   required >
+
+         <div *ngIf="k.required">il faut choisir une categorie</div>        
+
           <option selected value="">Choose...</option>
           <option value="1">high</option>
           <option value="2">medium</option>
@@ -50,7 +61,13 @@
     <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="validationServer01">Product Color</label>
-          <input type="text" class="form-control" value="Enter Product Name" required name="product_color" ngModel>
+          <input type="text" class="form-control" value="Enter Product Name" required name="product_color" ngModel
+          [(ngModel)]="product_color" #e="ngModel" minlength="2" >
+
+          <div class="alert alert-danger" *ngIf="e.invalid">   
+            le nom doit etre sup a 2 lettres
+             </div>
+
         </div>
         <div class="col-md-6 mb-3">
           <label for="validationServer02">Is Avaiable</label>
@@ -77,5 +94,5 @@
           </select>
         </div>
       </div>
-    <button class="btn btn-primary" type="submit" >Submit form</button>
+      <button class="btn btn-primary" type="submit"   >Submit form</button>
   </form>

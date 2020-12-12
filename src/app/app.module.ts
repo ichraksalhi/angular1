@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { OrdersModule } from './orders/orders.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -19,7 +19,7 @@ import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent 
  
   ],
   imports: [ 
@@ -30,7 +30,8 @@ import { ChartsModule } from 'ng2-charts';
     FormsModule, 
     BrowserModule,
     NgbModule,
-    ChartsModule
+    ChartsModule,
+    ReactiveFormsModule
     //ModelModule
   ],
   providers: [],

@@ -15,10 +15,11 @@ export class CreateProductComponent implements OnInit {
 
   currentRate = 0;
   
-
+  product: Product;
   constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
+
 
   }
 
@@ -33,7 +34,7 @@ export class CreateProductComponent implements OnInit {
         rating: form.value.product_rating,
         price: form.value.product_price,
         productImg: form.value.product_img,
-        isAvailable: 1,
+        isAvailable: 1,     
         color: form.value.product_color,
         reviews: form.value.product_category,
     };
