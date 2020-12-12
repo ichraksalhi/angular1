@@ -22,7 +22,7 @@ export class ProductsService {
   }
 
   getCategories(): Observable<Category>{
-    const categoriesUrl = 'http://localhost:3000/categories';
+    const categoriesUrl = 'http://localhost:3000/categories'; // rech par cat
     return this.httpClient.get<Category>(categoriesUrl);
   }
 
